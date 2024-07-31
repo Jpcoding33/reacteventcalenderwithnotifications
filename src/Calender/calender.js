@@ -1,10 +1,9 @@
 import { Wrapper, CalenderHead, SevenColGrid, HeadDay, CalenderBody, StyledDay, StyledEvent } from "./styled"
 import "bootstrap/dist/css/bootstrap.min.css";
 import * as Icon from 'react-bootstrap-icons';
-import { Days, MONTHS } from "./const";
+import { MONTHS } from "./const";
 import { range, getDaysInMonth, getSortedDays, areDatesTheSame, getDateobj } from "./util";
-import { useState, useEffect } from "react";
-import { EventModal } from "./addEventModal/addEventModal";
+import { useState } from "react";
 import "./addEventModal/addEventModal.css";
 
 export const Calender = ({ startingDate, eventsArr, addEvent, editEvent, removeEvent }) => {
